@@ -1,18 +1,4 @@
-Yes 😭 let's do it **in ONE clean response**. Don't do anything else except these steps.
-
-## STEP 1 — Open `README.md`
-
-In VS Code:
-
-```text
-ai-image-caption-ui
-   └── README.md   ← OPEN THIS
-```
-
-**Delete everything inside `README.md` and paste the COMPLETE content below:**
-
-````markdown
-# AI Image Caption Generator
+AI Image Caption Generator
 
 An end-to-end AI-powered image captioning system that automatically generates natural-language descriptions from images.
 
