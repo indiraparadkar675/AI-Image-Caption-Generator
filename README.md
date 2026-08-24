@@ -1,16 +1,48 @@
-# React + Vite
+# AI Image Caption Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An end-to-end AI-powered image captioning system that automatically generates natural-language descriptions from images.
 
-Currently, two official plugins are available:
+The system uses a **ResNet50 CNN encoder** for visual feature extraction and a **Transformer decoder** for caption generation. A **FastAPI backend** provides the inference API, while a **React.js frontend** provides a professional web interface for image upload and caption visualization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Upload an image through a web interface
+- ResNet50-based image feature extraction
+- 2048-dimensional visual feature representation
+- Transformer-based caption generation
+- Custom vocabulary and tokenization
+- FastAPI REST API
+- React.js frontend
+- Real-time image caption generation
+- BLEU-based model evaluation
+- GPU-accelerated training and inference
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🧠 Architecture
+
+```text
+User
+ │
+ ▼
+React Frontend
+ │
+ │ POST /predict
+ ▼
+FastAPI Backend
+ │
+ ▼
+ResNet50 Encoder
+ │
+ │ 2048-D Image Features
+ ▼
+Transformer Decoder
+ │
+ ▼
+Generated Caption
+ │
+ ▼
+React UI
+
